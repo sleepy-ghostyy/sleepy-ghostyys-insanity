@@ -1,0 +1,639 @@
+body {
+    cursor: url("./images/ghosticursor.png") 2 2, auto !important;
+    font-family: 'Luminary Serif', fantasy;
+    background: linear-gradient(rgb(36, 39, 80), rgb(38, 12, 59));
+    margin: 0;
+    padding: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:link:hover {
+    text-decoration: underline;
+}
+
+/*credit to keyland codes on yt fpr custom scrollbar*/
+
+:root {
+    scrollbar-color: rgb(213, 221, 255) rgb(31, 11, 48);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(213, 221, 255);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(31, 11, 48);
+}
+
+button,
+a,
+img,
+input,
+textarea,
+select {
+    cursor: url("./images/ghosticursor.png") 2 2, pointer !important;
+}
+
+.container {
+    width: 1200vw;
+    max-width: 85vw;
+    margin: 3vw auto;
+    background: transparent;
+}
+
+.mirrortop {
+    background: url('./images/mirrortop.png');
+    background-size: 100% 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 32vw;
+    width: 76.5vw;
+    max-width: 84vw;
+    padding-bottom: -2vh;
+    margin-bottom: -2vh;
+}
+
+.mirrortop img {
+    position: absolute;
+    top: 24vw;
+    left: 45vw;
+    transform: translate(-50%, -50%);
+    width: 16vw;
+    height: auto;
+}
+
+.eyesl img {
+    position: absolute;
+    top: 24vw;
+    left: 27vw;
+    transform: translate(-50%, -50%) scaleX(-1);
+    width: 19vw;
+    height: auto;
+}
+
+.eyesr img {
+    position: absolute;
+    top: 24vw;
+    left: 63vw;
+    transform: translate(-50%, -50%);
+    width: 19vw;
+    height: auto;
+}
+
+.sparkl img {
+    position: absolute;
+    top: 33vw;
+    left: 75vw;
+    transform: translate(-50%, -50%) scaleX(-1);
+    width: 7vw;
+    height: auto;
+}
+
+.sparkr img {
+    position: absolute;
+    top: 33vw;
+    left: 15vw;
+    transform: translate(-50%, -50%);
+    width: 7vw;
+    height: auto;
+}
+
+.mirror {
+    background-image: url('./images/mirror.png');
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+    width: 76.5vw;
+    max-width: 84vw;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: inline-block;
+    gap: 20vw;
+    padding-bottom: -1vh;
+    margin-bottom: -1vh;
+}
+
+.mirror img {
+    width: 7vw;
+    height: auto;
+}
+
+.mirror h1 {
+    margin: 0 auto 20px auto;
+}
+
+.mirror h2 {
+    max-width: 65vw;
+    margin: 0 auto 20px auto;
+}
+
+.mirror p {
+    color: ghostwhite;
+    font-size: 1.2rem;
+    size-adjust: 3vw;
+    max-width: 60vw;
+    margin: 0 auto 20px auto;
+}
+
+#ghostimg {
+    width: 20vw;
+    height: auto;
+    transition: 0.2s;
+}
+
+#ghostymg {
+    width: 30vw;
+    height: auto;
+    transition: 0.2s;
+}
+
+#ghostimg:hover,
+#ghostymg:hover {
+    transform: scale(1.04);
+}
+
+.mirrorbottom {
+    background: url('./images/mirrorbottom.png'); /*I FUCKIMG HATE THAT LITTLE GAP BETWEEN MIRROR AMD MIRRORBOTTOM*/
+    background-size: 100% 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 32vw;
+    width: 76.5vw;
+    max-width: 84vw;
+    padding-top: -1vh;
+    margin-top: -1vh;
+}
+
+.navi {
+    position: relative;
+    width: 67%;
+    margin: 0 auto;
+}
+
+.navi img {
+    display: block;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.stars {
+    position: relative;
+    width: 9%;
+    margin: 0 auto;
+}
+
+.stars img {
+    display: block;
+}
+
+.starl {
+    position: absolute;
+    bottom: 1%;
+    right: 400%;
+    width: 100%;
+    height: auto;
+    transform: scaleY(-1) translateY(-40%);
+}
+
+.starr {
+    position: absolute;
+    bottom: 1%;
+    left: 400%;
+    width: 100%;
+    height: auto;
+    transform: scale(-1) translateY(-40%);
+}
+
+.icons {
+    position: relative;
+    width: 67%;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+}
+
+.icons img {
+    display: block;
+}
+
+.fh {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    width: 16%;
+    height: auto;
+}
+
+.stn {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 16%;
+    height: auto;
+}
+
+.hush {
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    width: 16%;
+    height: auto;
+}
+
+.sclt {
+    position: absolute;
+    top: 20%;
+    left: 59%;
+    width: 16%;
+    height: auto;
+}
+
+.fld {
+    position: absolute;
+    top: 20%;
+    left: 76%;
+    width: 16%;
+    height: auto;
+}
+
+.etc {
+    position: absolute;
+    top: 30%;
+    left: 33.5%;
+    width: 16%;
+    height: auto;
+}
+
+.arts {
+    position: absolute;
+    top: 30%;
+    left: 50.5%;
+    width: 16%;
+    height: auto;
+}
+
+.fh,
+.stn,
+.hush,
+.sclt,
+.fld,
+.etc,
+.arts {
+    transition: 0.2s;
+}
+
+.fh:hover,
+.stn:hover,
+.hush:hover,
+.sclt:hover,
+.fld:hover,
+.etc:hover,
+.arts:hover {
+    transform: scale(1.05);
+}
+
+.play {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+.playstar {
+    position: absolute;
+    left: 43.75%;
+    bottom: 40%;
+    width: 18.5%;
+    height: auto;
+    transform: translateY(-18%);
+}
+
+.play:hover {
+    transform: scale(1.02) translateY(-13%);
+}
+
+/* I'm so sorry I forgot who helped me with this ghosty and buttons part on css and js,
+there were multiple sources because these parts was quite tedious and i didn't have youtube access for a while, at the time.
+I apologize in advance*/
+
+#ghosty {
+    position: fixed;
+    bottom: 1vh;
+    left: 83vw;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    z-index: 911; /*what's your emergency?*/
+    display: none;
+    transition: 0.2s;
+}
+
+#ghosty.show {
+    display: block;
+}
+
+#ghosty img {
+    display: block;
+    width: 19vw;
+    height: auto;
+}
+
+#ghosty:hover {
+    transform: scale(1.03);
+}
+
+.drawer {
+    position: fixed;
+    left: 0;
+    bottom: 6vh;
+    width: 20vw;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    align-items: flex-start;
+}
+
+.buttons button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-2.5%);
+    z-index: 9;
+}
+
+.newsbtn,
+.paintbtn,
+.chatbtn,
+.musicbtn {
+    transition: 0.2s;
+}
+
+.newsbtn:hover,
+.paintbtn:hover,
+.chatbtn:hover,
+.musicbtn:hover {
+    transform: scale(1.04) translateX(0);
+}
+
+.buttons img {
+    display: block;
+    width: 4vw;
+    height: auto;
+}
+
+.newscreen,
+.paintscreen {
+    position: fixed;
+    bottom: 6vh;
+    transform: translateX(-110%);
+    width: 14.82vw;
+    height: 15vw;
+    background: url(./images/screen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: ghostwhite;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: rgba(108, 113, 185) rgb(199, 207, 250);
+    scrollbar-width: thin;
+    filter: drop-shadow(1px 1px 5px black);
+    transition: 0.6s ease;
+}
+
+.chatscreen {
+    position: fixed;
+    bottom: 6vh;
+    transform: translateX(-110%);
+    width: 14.82vw;
+    height: 15vw;
+    background: url(./images/screen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: ghostwhite;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    filter: drop-shadow(1px 1px 5px black);
+    transition: 0.6s ease;
+}
+
+.musicscreen {
+    position: fixed;
+    bottom: 6vh;
+    transform: translateX(-110%);
+    width: 15vw;
+    height: 15vw;
+    background: url(./images/musicscreen.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: ghostwhite;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    filter: drop-shadow(1px 1px 5px black);
+    transition: 0.6s ease;
+}
+
+.newscreen.open,
+.paintscreen.open,
+.chatscreen.open,
+.musicscreen.open {
+    transform: translateX(3.85vw);
+}
+
+.newsh {
+    max-width: 27vw;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+#toolbar {
+    margin-bottom: 2vh;
+}
+
+#toolbar label {
+    font-size: 1vw;
+}
+
+#toolbar input {
+    width: 20%;
+}
+
+#toolbar button {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: ghostwhite;
+    justify-content: center;
+    gap: 1vw;
+    width: 3vw;
+    height: 3vh;
+    border-radius: 1vw;
+    font-size: 1vw;
+    font-family: 'Luminary Serif';
+    transition: 0.2s;
+}
+
+#toolbar button:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+}
+
+.page {
+    width: 100%;
+    height: 60vh;
+}
+
+#page {
+    width: 100%;
+    height: 90%;
+    background: white;
+    border-radius: 1vw;
+    cursor: crosshair;
+    display: block;
+}
+
+.chatbox {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+
+    border-radius: 1vw;
+
+    background: rgba(39, 10, 64, 0.16);
+
+    backdrop-filter: blur(5px);
+}
+
+/* Credits to kenny ying coding on youtube for some parts of song list that helped */
+.songs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    margin-bottom: 1vw;
+    max-height: 60%;
+}
+
+.song {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: ghostwhite;
+    width: 3vw;
+    height: 3vh;
+    border-radius: 1vw;
+    font-size: 1vw;
+    font-family: 'Luminary Serif';
+    transition: 0.2s;
+}
+
+.song:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+}
+
+.songsbutton {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+
+    margin-bottom: 2vw;
+}
+
+.songsbutton button {
+    background: rgba(255,255,255,0.08);
+
+    border: none;
+    outline: none;
+
+    color: ghostwhite;
+
+    width: 4vw;
+    height: 4vh;
+
+    border-radius: 50%;
+
+    font-size: 1vw;
+
+    transition: 0.2s;
+}
+
+.songsbutton button:hover {
+    background: rgba(255,255,255,0.2);
+
+    transform: scale(1.05);
+}
+
+.msh5 {
+    max-width: 27vw;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+#cross {
+    position: relative;
+
+    top: 30%;
+    right: 1%;
+    transform: translateY(-58%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    appearance: none;
+    -webkit-appearance: none;
+    transition: 0.2s;
+}
+
+#cross img {
+    display: block;
+    width: 30vw;
+    height: auto;
+}
+
+#cross:hover {
+    transform: scale(1.02) translateY(-56%);
+}
+
+.feeh {
+    background: linear-gradient(rgb(23, 6, 37), rgb(26, 28, 62));
+    color: ghostwhite;
+    width: 100%;
+    text-align: center;
+    padding: 3.5rem 0;
+    margin-top: -20vw;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+/* IF THERE'S LITERALLY ANYONE ANYONEEEE SEEING THIS MESSY AHH CODE
+I'M SORRY ION EVEN KNOW WHAT I'M DOING I JUST DO THE MESSIEST SHI TO KEEP MY CODE WORKING OK */
