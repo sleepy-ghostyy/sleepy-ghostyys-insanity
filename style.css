@@ -1,5 +1,5 @@
 body {
-    cursor: url("./images/ghosticursor.png") 2 2, auto !important;
+    cursor: url("ghosticursor.png") 2 2, auto !important;
     font-family: 'Luminary Serif', fantasy;
     background: linear-gradient(rgb(36, 39, 80), rgb(38, 12, 59));
     margin: 0;
@@ -45,7 +45,7 @@ img,
 input,
 textarea,
 select {
-    cursor: url("./images/ghosticursor.png") 2 2, pointer !important;
+    cursor: url("ghosticursor.png") 2 2, pointer !important;
 }
 
 .container {
@@ -56,7 +56,7 @@ select {
 }
 
 .mirrortop {
-    background: url('./images/mirrortop.png');
+    background: url('mirrortop.png');
     background-size: 100% 100%;
     background-position: top center;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ select {
 }
 
 .mirror {
-    background-image: url('./images/mirror.png');
+    background-image: url('mirror.png');
     background-size: 100% 100%;
     background-repeat: repeat-y;
     width: 76.5vw;
@@ -167,7 +167,7 @@ select {
 }
 
 .mirrorbottom {
-    background: url('./images/mirrorbottom.png'); /*I FUCKIMG HATE THAT LITTLE GAP BETWEEN MIRROR AMD MIRRORBOTTOM*/
+    background: url('mirrorbottom.png'); /*I FUCKIMG HATE THAT LITTLE GAP BETWEEN MIRROR AMD MIRRORBOTTOM*/
     background-size: 100% 100%;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -412,7 +412,7 @@ I apologize in advance*/
     transform: translateX(-110%);
     width: 14.82vw;
     height: 15vw;
-    background: url(./images/screen.png);
+    background: url(screen.png);
     background-size: contain;
     background-repeat: no-repeat;
     color: ghostwhite;
@@ -431,7 +431,7 @@ I apologize in advance*/
     transform: translateX(-110%);
     width: 14.82vw;
     height: 15vw;
-    background: url(./images/screen.png);
+    background: url(screen.png);
     background-size: contain;
     background-repeat: no-repeat;
     color: ghostwhite;
@@ -449,7 +449,7 @@ I apologize in advance*/
     transform: translateX(-110%);
     width: 15vw;
     height: 15vw;
-    background: url(./images/musicscreen.gif);
+    background: url(musicscreen.gif);
     background-size: contain;
     background-repeat: no-repeat;
     color: ghostwhite;
