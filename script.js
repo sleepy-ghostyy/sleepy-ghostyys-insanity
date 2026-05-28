@@ -40,9 +40,9 @@ button1.onclick = function () {
     panel1.classList.toggle("open");
 
     if (panel1.classList.contains("open")) {
-        icon1.src = "./images/newson.png";
+        icon1.src = "newson.png";
     } else {
-        icon1.src = "./images/newsoff.png";
+        icon1.src = "newsoff.png";
     }
 };
 
@@ -51,9 +51,9 @@ button2.onclick = function () {
     panel2.classList.toggle("open");
 
     if (panel2.classList.contains("open")) {
-        icon2.src = "./images/painton.png";
+        icon2.src = "painton.png";
     } else {
-        icon2.src = "./images/paintoff.png";
+        icon2.src = "paintoff.png";
     }
 };
 
@@ -62,9 +62,9 @@ button3.onclick = function () {
     panel3.classList.toggle("open");
 
     if (panel3.classList.contains("open")) {
-        icon3.src = "./images/chaton.png";
+        icon3.src = "chaton.png";
     } else {
-        icon3.src = "./images/chatoff.png";
+        icon3.src = "chatoff.png";
     }
 };
 
@@ -73,9 +73,9 @@ button4.onclick = function () {
     panel4.classList.toggle("open");
 
     if (panel4.classList.contains("open")) {
-        icon4.src = "./images/musicon.png";
+        icon4.src = "musicon.png";
     } else {
-        icon4.src = "./images/musicoff.png";
+        icon4.src = "musicoff.png";
     }
 };
 
@@ -90,43 +90,43 @@ const songs = [
     {
 
         title: "1. The Dove - Baby Bugs",
-        src: "./musics/The Dove - Baby Bugs.mp3"
+        src: "The Dove - Baby Bugs.mp3"
     },
     {
         title: "2. Otomodachi - Phantom Siita",
-        src: "./musics/Otomodachi - Phantom Siita.mp3"
+        src: "Otomodachi - Phantom Siita.mp3"
     },
     {
         title: "3. AiAiA - Ado",
-        src: "./musics/AiAiA - Ado.mp4"
+        src: "AiAiA - Ado.mp4"
     },
     {
         title: "4. Rubio's Lament - Waitress",
-        src: "./musics/Rubio's Lament - Waitress.mp3"
+        src: "Rubio's Lament - Waitress.mp3"
     },
     {
         title: "5. Pulsar Star - Anya Nami",
-        src: "./musics/Pulsar Star - Anya Nami.mp4"
+        src: "Pulsar Star - Anya Nami.mp4"
     },
     {
         title: "6. Bernadette - IAMX",
-        src: "./musics/Bernadette - IAMX.mp4"
+        src: "Bernadette - IAMX.mp4"
     },
     {
         title: "7. ANOTHER CUP ft. Kasane Teto - bunnycat",
-        src: "./musics/ANOTHER CUP ft Kasane Teto - bunnycat.mp4"
+        src: "ANOTHER CUP ft Kasane Teto - bunnycat.mp4"
     },
     {
         title: "8. Rivers Is a Vampire - Bear Ghost",
-        src: "./musics/Rivers Is a Vampire - Bear Ghost.mp4"
+        src: "Rivers Is a Vampire - Bear Ghost.mp4"
     },
     {
         title: "9. DON'T WANNA SLEEP - måneskin",
-        src: "./musics/DONT WANNA SLEEP - maneskin.mp4"
+        src: "DONT WANNA SLEEP - maneskin.mp4"
     },
     {
         title: "10. Himitsu Keisatsu ft. Hatsune Miku - buriru",
-        src: "./musics/Himitsu Keisatsu ft Hatsune Miku - buriru.mp4"
+        src: "Himitsu Keisatsu ft Hatsune Miku - buriru.mp4"
     },
 
 ];
