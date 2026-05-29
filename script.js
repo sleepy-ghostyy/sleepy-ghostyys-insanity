@@ -356,3 +356,19 @@ function resizeCanvas() {
 }
 
 window.addEventListener('resize', resizeCanvas);
+
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+const caption = document.getElementById("caption");
+
+function openImage(img) {
+
+    modal.style.display = "flex";
+
+    modalImg.src = img.src;
+    caption.textContent = img.alt;
+};
+
+function closeImage() {
+    document.getElementById("imgModal").style.display = "none";
+};
