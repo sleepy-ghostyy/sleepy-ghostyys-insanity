@@ -149,6 +149,52 @@ select {
     margin: 0 auto 20px auto;
 }
 
+.someimgs,
+.myimgs1,
+.myimgs2,
+.cats2 {
+    margin-top: 1vw;
+    margin-left: 3.5vw;
+    padding-bottom: 0.75vw;
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    gap: 0.5rem;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.649) transparent;
+    scrollbar-width: thin;
+}
+
+.someimgs img,
+.myimgs1 img,
+.myimgs2 img,
+.cats2 img {
+    height: 30vh;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 920;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.modal img {
+    width: 90vw;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
 #ghostimg {
     width: 20vw;
     height: auto;
