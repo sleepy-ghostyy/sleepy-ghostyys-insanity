@@ -1,0 +1,179 @@
+body {
+    background-image: url(https://i.pinimg.com/736x/66/22/69/662269dfb86cea9e3da3c095884ca2fd.jpg);
+    background-repeat: contain;
+    font-family:'yipes';
+    font-size: 2rem;
+}
+
+:root {
+    scrollbar-color: rgb(211, 177, 249) rgb(254, 253, 255);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(211, 177, 249);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(254, 253, 255);
+}
+
+@font-face {
+font-family:'psyche';
+src: url(https://dl.dropbox.com/s/gavkuhehligvhz8/PsycheLover-Regular.otf);
+}
+
+@font-face {
+font-family:'yipes';
+src: url(https://dl.dropbox.com/s/qrdm3wived8sm66/Yipes.ttf);
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    color: ghostwhite;
+    max-width: 90%;
+    margin: 1.3rem auto;
+}
+
+.box {
+    width: 60vw;
+    margin: 3vw auto;
+}
+
+.frame {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.topimg{
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin-bottom: -1px;
+}
+
+.botimg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: -1px;
+}
+
+.midb {
+    background: linear-gradient(rgb(0, 0, 0), rgb(1, 3, 32));
+    border-style: none groove none groove;
+    border-color: darkorchid;
+}
+
+.minib {
+    margin: 1vw auto;
+    width: 90%;
+    height: 300px;
+    aspect-ratio: 2 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.carousel {
+    margin: 0 auto;
+    padding: 5px 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 1em;
+    padding-right: 7em;
+    animation: scroll 17s linear infinite;
+}
+
+.group2 {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 1em;
+    padding-right: 1em;
+    animation: scroll 12s linear infinite;
+}
+
+.carousel:hover .group, .carousel:hover .group2 {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+
+.card {
+    flex: 0 0 3em;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.card2 {
+    flex: 0 0 3em;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.linklist {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    max-width: 100%;
+    height: 7vh;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding: 1vw;
+    background-color: rgba(255, 255, 255, 0.386);
+    border-style: none dotted none dotted;
+    border-color: rgba(80, 80, 80, 0.699);
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(234, 217, 254) rgba(254, 253, 255, 0.767);
+    filter: drop-shadow(1px 1px 5px rgba(175, 173, 178, 0.585));
+}
+
+.linklist a {
+    background-color: rgb(255, 255, 255);
+    height: 95%;
+    border-style: solid;
+    border-width: 5px 20px 1px 20px;
+    border-color: white;
+    font-size: 1.7rem;
+    color: rgb(62, 19, 127);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:link:hover {
+    text-decoration: underline;
+}
+
+.animg {
+    display: block;
+    width: 100%;
+}
